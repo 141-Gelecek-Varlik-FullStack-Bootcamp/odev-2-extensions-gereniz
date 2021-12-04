@@ -5,4 +5,10 @@
     <RootNamespace>odev_2_extensions_gereniz</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Infrastructure\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
 </Project>

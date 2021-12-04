@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using odev_2_extensions_gereniz.Infrastructure;
 using odev_2_extensions_gereniz.Models;
 
 namespace odev_2_extensions_gereniz.Controllers
@@ -18,6 +19,7 @@ namespace odev_2_extensions_gereniz.Controllers
             _logger = logger;
         }
 
+        [LoginFilter("Developer")]
         public IActionResult Index()
         {
             return View();
